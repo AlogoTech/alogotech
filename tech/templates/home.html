@@ -8,10 +8,10 @@
         <div class='page-loader' id="page-loader">
             <div><i class='fa fa-spinner  fa-spin'></i><p>loading</p></div>
         </div>
-  
+
     <!-- BEGIN OF site header Menu -->
     <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
-  
+
       <!-- Begin of menu icon toggler -->
       <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
         <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
@@ -24,11 +24,11 @@
         </span>
       </button>
       <!-- End of menu icon toggler -->
-  
+
       <!-- Begin of logo/brand -->
       <a class="navbar-brand" href="#">
         <span class="logo">
-          <img class="light-logo" src="../img/logo.png" alt="Logo">
+          <img class="light-logo" src="{% static "/img/logo.png" %}" alt="Logo">
         </span>
         <span class="text">
           <span class="line">Alogo Tech</span>
@@ -36,13 +36,13 @@
         </span>
       </a>
       <!-- End of logo/brand -->
-  
+
       <!-- begin of menu wrapper -->
       <div class="all-menu-wrapper" id="navbarMenu">
         <!-- Begin of top menu -->
-        
+
         <!-- End of top menu -->
-  
+
         <!-- Begin of hamburger mainmenu menu -->
         <nav class="navbar-mainmenu">
           <ul class="navbar-nav mr-auto">
@@ -63,7 +63,7 @@
           </ul>
         </nav>
         <!-- End of hamburger mainmenu menu -->
-  
+
         <!-- Begin of sidebar nav menu params class: text-only / icon-only-->
         <nav class="navbar-sidebar ">
           <ul class="navbar-nav" id="qmenu">
@@ -96,25 +96,25 @@
         <!-- End of sidebar nav menu -->
       </div>
       <!-- end of menu wrapper -->
-  
+
     </header>
     <!-- END OF site header Menu-->
-  
+
     <!-- BEGIN OF page cover -->
     <div class="page-cover">
       <!-- Cover Background -->
-      <div class="cover-bg bg-img" data-image-src="./img/bg-default.jpg"></div>
-  
+      <div class="cover-bg bg-img" data-image-src="{% static "/img/bg-default.jpg" %}"></div>
+
       <!-- Transluscent mask as filter -->
       <div class="cover-bg-mask bg-color" data-bgcolor="linear-gradient(rgba(10, 4, 2, 0.7), rgba(10, 2, 2, 0.7))"></div>
-  
-  
+
+
     </div>
     <!--END OF page cover -->
-  
+
     <!-- BEGIN OF page main content -->
     <main class="page-main page-fullpage main-anim" id="mainpage">
-  
+
       <!-- Begin of home section -->
       <div class="section section-home fullscreen-md fp-auto-height-responsive main-home"
       data-section="home">
@@ -124,7 +124,7 @@
           <div class="section-title text-center">
             <h5 class="title-bg">Hello</h5>
           </div>
-  
+
           <!-- content -->
           <div class="section-content anim mt-80">
             <!-- title and description -->
@@ -132,7 +132,7 @@
               <h2 class="display-4 display-title home-title anim-1">Alogo Tech</h2>
               <h4 class="anim-2">Your Everyday Tech Partner in Designs, Web and Mobile Application Development</h4>
             </div>
-  
+
             <!-- Action button -->
             <div class="btns-action anim-3">
               <a class="btn btn-outline-white btn-round" href="#about">
@@ -140,7 +140,7 @@
               </a>
             </div>
           </div>
-  
+
           <!-- Arrows scroll down/up -->
           <footer class="section-footer scrolldown">
             <a class="down">
@@ -152,7 +152,7 @@
         <!-- End of section wrapper -->
       </div>
       <!-- End of home section -->
-  
+
       <!-- Begin of description section -->
       <div class="section section-description fp-auto-height-responsive " data-section="about">
         <!-- Begin of section wrapper -->
@@ -162,20 +162,20 @@
             <h5 class="title-bg">About</h5>
             <h2 class="display-4 display-title anim-2"> About Us </h2>
           </div>
-  
+
           <!-- content -->
           <div class="section-content reduced anim text-center">
             <!-- title and description -->
             <div class="title-desc anim-3">
-              <p>Derived by Enthusuasim, Passion and Creativity, the company was founded and started to 
+              <p>Derived by Enthusuasim, Passion and Creativity, the company was founded and started to
                 provide world class and top notch standard design and applications to its esteemed customers.
-                The company looks forward to come up with IT solutions that will solve the world problems by 
-                specializing in design and web development. Comprised of a team of six able developers, we 
+                The company looks forward to come up with IT solutions that will solve the world problems by
+                specializing in design and web development. Comprised of a team of six able developers, we
                 provide the best and quality services within the stortest timeframe possible. </p>
             </div>
-  
+
           </div>
-  
+
           <!-- Arrows scroll down/up -->
           <footer class="section-footer scrolldown">
             <a class="down">
@@ -187,7 +187,7 @@
         <!-- End of section wrapper -->
       </div>
       <!-- End of description section -->
-  
+
       <!-- Begin of description section -->
       <div class="section section-description fp-auto-height-responsive " data-section="team">
         <!-- Begin of section wrapper -->
@@ -196,7 +196,7 @@
           <div class="section-title text-center">
             <h5 class="title-bg">Team</h5>
           </div>
-  
+
           <!-- content -->
           <div class="section-content anim text-center">
             <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
@@ -209,7 +209,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="./img/avator.jpg" alt="Image">
+                          <img class="img" src="{%static "/img/avator.jpg"%}"alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -235,7 +235,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="./img/avator.jpg" alt="Image">
+                          <img class="img" src="{% static "/img/avator.jpg" %}" alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -261,7 +261,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="./img/avator.jpg" alt="Image">
+                          <img class="img" src="{%static "/img/avator.jpg"%}"alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -287,7 +287,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="./img/avator.jpg" alt="Image">
+                          <img class="img" src="{%static "/img/avator.jpg"%}"alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -313,7 +313,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="./img/avator.jpg" alt="Image">
+                          <img class="img" src="{%static "/img/avator.jpg"%}"alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -339,7 +339,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="../img/avator.jpg" alt="Image">
+                          <img class="img" src="{% static "/img/avator.jpg" %}" alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -358,11 +358,11 @@
                   </div>
                 </div>
               </div>
-  
+
             </div>
             <!-- end of item -->
           </div>
-  
+
           <!-- Arrows scroll down/up -->
           <footer class="section-footer scrolldown">
             <a class="down">
@@ -374,7 +374,7 @@
         <!-- End of section wrapper -->
       </div>
       <!-- End of description section -->
-  
+
       <!-- Begin of list feature section -->
       <div class="section section-list-feature fp-auto-height-responsive " data-section="services">
         <!-- Begin of section wrapper -->
@@ -382,11 +382,11 @@
           <!-- title -->
           <div class="section-title text-center">
             <h2 class="display-4 display-title title-bg">Services</h2>
-            <p class="anim-2">Get the following services provided by us at a financially friendly cost and of 
+            <p class="anim-2">Get the following services provided by us at a financially friendly cost and of
               quality output
             </p>
           </div>
-  
+
           <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
           <!-- begin of item -->
           <div class="item row justify-content-between fade-1">
@@ -401,7 +401,7 @@
                     </div>
                     <div class="media-body">
                       <h4>Web applications</h4>
-                      <p> We develop the most quality and user friendly websites, web applications, On-premise 
+                      <p> We develop the most quality and user friendly websites, web applications, On-premise
                         applications and other solutions as per your preference.</p>
                     </div>
                   </div>
@@ -412,7 +412,7 @@
                     </div>
                     <div class="media-body">
                       <h4>Module intergration and development</h4>
-                      <p>In case of an existing application, we design specific 
+                      <p>In case of an existing application, we design specific
                         modules and intergrate to the existing application
                         to solve the particular needs at hand.</p>
                     </div>
@@ -420,7 +420,7 @@
               </div>
             </div>
             <!-- end of column content -->
-  
+
             <!-- begin of column content -->
             <div class="col-12 col-md-6 col-lg-6">
               <!-- content -->
@@ -433,7 +433,7 @@
                     <div class="media-body">
                       <h4>Design Work</h4>
                       <p> We provide all design work related services including Logos, business cards
-                        brands, letter heads and advertisment barners 
+                        brands, letter heads and advertisment barners
                       </p>
                     </div>
                   </div>
@@ -454,7 +454,7 @@
             <!-- end of column content -->
           </div>
           <!-- end of item -->
-  
+
           <!-- Arrows scroll down/up -->
           <footer class="section-footer scrolldown">
             <a class="down">
@@ -466,12 +466,12 @@
         <!-- End of section wrapper -->
       </div>
       <!-- End of list feature section -->
-  
+
       <!-- Begin of slider section -->
-      
+
       <!-- Begin of contact section -->
       <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
-  
+
         <!-- begin of information slide -->
         <div class="slide" id="information" data-anchor="information">
           <!-- Begin of slide section wrapper -->
@@ -480,7 +480,7 @@
             <div class="section-title text-center">
               <h5 class="title-bg">Contact</h5>
             </div>
-  
+
             <div class="row">
               <div class="col-12 col-md-6">
                 <!-- content -->
@@ -494,7 +494,7 @@
                         services, reach us in the following contacts.</p>
                     </div>
                     <div class="address-container anim-3">
-  
+
                       <div class="row">
                         <div class="col-12 col-md-12 col-lg-6">
                           <h4>Contact</h4>
@@ -512,7 +512,7 @@
                       </div>
                     </div>
                   </div>
-  
+
                   <!-- Action button -->
                   <div class="btns-action anim-4">
                     <a class="btn btn-outline-white btn-round" href="#contact/message">
@@ -521,16 +521,16 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="col-12 col-md-6">
-  
+
               </div>
             </div>
           </div>
           <!-- End of slide section wrapper -->
         </div>
         <!-- end of information slide -->
-  
+
         <!-- begin of message slide -->
         <div class="slide" id="message" data-anchor="message">
           <!-- Begin of slide section wrapper -->
@@ -549,7 +549,7 @@
                         dui. Fusce in urna sem.</p>
                     </div>
                   </div>
-  
+
                   <!-- Action button -->
                   <div class="btns-action">
                     <a class="btn btn-outline-white btn-round" href="#contact/information">
@@ -558,7 +558,7 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="col-12 col-md-6 col-lg-5">
                 <!-- content -->
                 <div class="section-content anim text-left">
@@ -582,12 +582,12 @@
                           <label for="mes-text">Message</label>
                           <textarea id="mes-text" placeholder="..." name="message" class="form-control form-control-outline thick form-success-clean"
                           required></textarea>
-  
+
                           <div>
                             <p class="message-ok invisible form-text-feedback form-success-visible">Your message has been sent, thank you.</p>
                           </div>
                         </div>
-  
+
                         <div class="btns">
                           <button id="submit-message" class="btn btn-normal btn-white btn-round btn-full email_b"
                           name="submit_message">
@@ -605,16 +605,16 @@
           <!-- End of slide section wrapper -->
         </div>
         <!-- end of message slide -->
-  
+
       </div>
       <!-- End of contact section -->
     </main>
     <!-- END OF page main content -->
-  
+
     <!-- BEGIN OF page footer -->
     <footer id="site-footer" class="page-footer">
       <!-- Left content -->
-  
+
       <!-- Right content -->
       <div class="footer-right">
         <ul class="social">

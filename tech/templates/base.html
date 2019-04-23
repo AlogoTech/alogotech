@@ -1,5 +1,5 @@
 {% load bootstrap3 %}
-{% load static%}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,29 +9,29 @@
     <title>alogotech</title>
     {% block styles %}
     {% bootstrap_css %}
-  <link rel="shortcut icon" href="../img/logo.png" />
+  <link rel="shortcut icon" href="{% static "/img/logo.png" %}"/>
 
-  
+
   <!-- Web fonts and Web Icons -->
-  <link rel="stylesheet" href="../fonts/opensans/stylesheet.css">
-  <link rel="stylesheet" href="../fonts/bebas/stylesheet.css">
-  <!-- <link rel="stylesheet" href="./fonts/ionicons.min.css"> -->
-  <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+  <link rel="stylesheet" href="{% static "/fonts/opensans/stylesheet.css"%}">
+  <link rel="stylesheet" href="{% static '/fonts/bebas/stylesheet.css' %}">
+ <link rel="stylesheet" href="{% static "./fonts/ionicons.min.css"%}">
+  <link rel="stylesheet" href="{% static "/fonts/fontawesome/css/all.css"%}">
 
   <!-- Vendor CSS style -->
-  <link rel="stylesheet" href="../css/pageloader.css">
+  <link rel="stylesheet" href="{% static "/css/pageloader.css"%}">
 
-  <!-- Uncomment below to load individualy vendor CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../js/vendor/swiper.min.css">
-  <link rel="stylesheet" href="../js/vendor/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="../js/vegas/vegas.min.css">
+  <!--Uncomment below to load individualy vendor CSS -->
+  <link rel="stylesheet" href="{% static "/css/bootstrap.min.css"%}">
+  <link rel="stylesheet" href="{% static "/js/vendor/swiper.min.css"%}">
+  <link rel="stylesheet" href="{% static "/js/vendor/jquery.fullpage.min.css"%}">
+  <link rel="stylesheet" href="{% static "/js/vegas/vegas.min.css"%}">
 
   <!-- Main CSS files -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="{% static "/css/style.css"%}">
 
   <!-- add alt layout here -->
-  <link rel="stylesheet" href="../css/style-default.css">
+  <link rel="stylesheet" href="{% static "/css/style-default.css"%}">
   {% endblock %}
 
 
@@ -40,26 +40,26 @@
 
     {% block content %}  {%endblock%}
 
-  
-    {% block scripts%} 
-    <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
+
+    {% block scripts%}
+    <script src="{% static "js/vendor/modernizr-2.7.1.min.js" %}"></script>
 
   <!-- All Javascript plugins goes here -->
-  <script src="./js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="{% static "/js/vendor/jquery-1.12.4.min.js" %}"></script>
 
   <!-- All vendor scripts -->
-  <script src="./js/vendor/scrolloverflow.min.js"></script>
-  <script src="./js/vendor/all.js"></script>
-  <script src="./js/particlejs/particles.min.js"></script>
+  <script src="{% static "/js/vendor/scrolloverflow.min.js" %}"></script>
+  <script src="{% static "/js/vendor/all.js" %}"></script>
+  <script src="{% static "/js/particlejs/particles.min.js"%}"></script>
 
   <!-- Countdown script -->
-  <script src="./js/jquery.downCount.js"></script>
+  <script src="{% static "/js/jquery.downCount.js"%}"></script>
 
   <!-- Form script -->
-  <script src="./js/form_script.js"></script>
+  <script src="{% static "/js/form_script.js" %}"></script>
 
   <!-- Javascript main files -->
-  <script src="./js/main.js"></script>
+  <script src="{% static "/js/main.js"%}"></script>
   {%endblock%}
 
 </body>

@@ -120,3 +120,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+os.path.join(BASE_DIR, "static"),
+'/var/www/static/',
+]
+
+EMAIL_HOST = 'smtp.alogotech.com'
+EMAIL_HOST_USER = 'dev@alogotech.com'
+EMAIL_HOST_PASSWORD = 'alogoTech@2019'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'mariam <umarsamiya@gmail.com>'
+
+ADMINS = (
+    ('mariam', 'umarsamiya@gmail.com'),
+)
+MANAGERS = ADMINS
