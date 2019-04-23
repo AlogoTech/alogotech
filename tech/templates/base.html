@@ -1,11 +1,66 @@
+{% load bootstrap3 %}
+{% load static%}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>alogotech</title>
+    {% block styles %}
+    {% bootstrap_css %}
+  <link rel="shortcut icon" href="../img/logo.png" />
+
+  
+  <!-- Web fonts and Web Icons -->
+  <link rel="stylesheet" href="../fonts/opensans/stylesheet.css">
+  <link rel="stylesheet" href="../fonts/bebas/stylesheet.css">
+  <!-- <link rel="stylesheet" href="./fonts/ionicons.min.css"> -->
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+
+  <!-- Vendor CSS style -->
+  <link rel="stylesheet" href="../css/pageloader.css">
+
+  <!-- Uncomment below to load individualy vendor CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../js/vendor/swiper.min.css">
+  <link rel="stylesheet" href="../js/vendor/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="../js/vegas/vegas.min.css">
+
+  <!-- Main CSS files -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- add alt layout here -->
+  <link rel="stylesheet" href="../css/style-default.css">
+  {% endblock %}
 
 
 </head>
-<body>
-    {% block content %} <h1> hi there!</h1> {%endblock%}
+<body id="menu" class="body-page">
+
+    {% block content %}  {%endblock%}
+
+  
+    {% block scripts%} 
+    <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
+
+  <!-- All Javascript plugins goes here -->
+  <script src="./js/vendor/jquery-1.12.4.min.js"></script>
+
+  <!-- All vendor scripts -->
+  <script src="./js/vendor/scrolloverflow.min.js"></script>
+  <script src="./js/vendor/all.js"></script>
+  <script src="./js/particlejs/particles.min.js"></script>
+
+  <!-- Countdown script -->
+  <script src="./js/jquery.downCount.js"></script>
+
+  <!-- Form script -->
+  <script src="./js/form_script.js"></script>
+
+  <!-- Javascript main files -->
+  <script src="./js/main.js"></script>
+  {%endblock%}
+
 </body>
 </html>
