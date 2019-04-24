@@ -209,7 +209,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="{%static "/img/avator.jpg"%}"alt="Image">
+                          <img class="img" src="{%static "/img/samiya.png"%}"alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -235,7 +235,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="{% static "/img/avator.jpg" %}" alt="Image">
+                          <img class="img" src="{% static "/img/simon.jpeg" %}" alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -261,7 +261,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="{%static "/img/avator.jpg"%}"alt="Image">
+                          <img class="img" src="{%static "/img/munira.jpeg"%}"alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -287,7 +287,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="{%static "/img/avator.jpg"%}"alt="Image">
+                          <img class="img" src="{%static "/img/bonvic.jpeg"%}"alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -313,7 +313,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="{%static "/img/avator.jpg"%}"alt="Image">
+                          <img class="img" src="{%static "/img/anderson.jpeg"%}"alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -339,7 +339,7 @@
                     <div class="img-avatar-alpha">
                       <div class="img-1 shadow">
                         <a href="item.html">
-                          <img class="img" src="{% static "/img/avator.jpg" %}" alt="Image">
+                          <img class="img" src="{% static "/img/wesley.jpeg" %}" alt="Image">
                         </a>
                       </div>
                       <div class="legend text-center pos-abs">
@@ -498,15 +498,15 @@
                       <div class="row">
                         <div class="col-12 col-md-12 col-lg-6">
                           <h4>Contact</h4>
-                          <p>Call: 01 234 567 89</p>
-                          <p>Email: ouremail@domain.com</p>
+                          <p>Call: 0707030398</p>
+                          <p>Email: dev@alogotech.com</p>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6">
                           <h4>Address</h4>
                           <p>
-                            Company address
+                            
                             <br>12 Street Turning Place
-                            <br>South Est, Antartica
+                            <br>Nairobi,Kenya
                           </p>
                         </div>
                       </div>
@@ -544,9 +544,10 @@
                     <div>
                       <h5>Customer Service</h5>
                       <h2 class="display-4 display-title">Email Us</h2>
-                      <p>For questions about our company and products found on our stores.
-                        Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis
-                        dui. Fusce in urna sem.</p>
+                      <p>For questions about our company and websites and applications 
+                        build by our developers you can refer to our <a href="https://github.com/AlogoTech" style="color:aqua;">github</a> .subscribe to our website
+                        to receive educational blog contents from our developers.
+                      </p>
                     </div>
                   </div>
 
@@ -566,8 +567,9 @@
                   <div class="">
                     <div class="form-container form-container-card">
                       <!-- Message form container -->
-                      <form class="send_message_form message form" method="post" action="ajaxserver/serverfile.php"
+                      <form class="send_message_form message form" method="post" action="{%url 'alogo_email'%}"
                       id="message_form">
+                      {%csrf_token%}
                         <div class="form-group name">
                           <label for="mes-name">Name :</label>
                           <input id="mes-name" name="name" type="text" placeholder="" class="form-control-line form-success-clean"

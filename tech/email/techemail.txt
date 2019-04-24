@@ -1,0 +1,4 @@
+Dear {{name}},
+
+We are happy to be your developers as alogotechies. AlogoTech will help you build your next applications.
+Kindly tell us how we can help. 
