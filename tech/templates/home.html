@@ -567,7 +567,7 @@
                   <div class="">
                     <div class="form-container form-container-card">
                       <!-- Message form container -->
-                      <form class="send_message_form message form" method="post" action="{%url 'alogo_email'%}"
+                      <form class="send_message_form message form" method="POST" action="{% url 'alogotech:subscribe' %}"
                       id="message_form">
                       {%csrf_token%}
                         <div class="form-group name">

@@ -69,6 +69,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'alogo.wsgi.application'
+ENCRYPT_KEY = b'NDa1PX8q6xRa63b2mEowfcfXYn_-fbF1xs1dui-41v4='
 
 
 # Database
@@ -128,11 +129,6 @@ os.path.join(BASE_DIR, "static"),
 EMAIL_HOST = 'smtp.alogotech.com'
 EMAIL_HOST_USER = 'dev@alogotech.com'
 EMAIL_HOST_PASSWORD = 'alogoTech@2019'
-EMAIL_PORT ='587'
+EMAIL_PORT ='localhost'
 EMAIL_USE_TLS = 'True'
-DEFAULT_FROM_EMAIL = 'mariam <umarsamiya@gmail.com>'
 
-ADMINS = (
-    ('mariam', 'umarsamiya@gmail.com'),
-)
-MANAGERS = ADMINS
