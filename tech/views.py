@@ -11,17 +11,32 @@ from django.core.mail import send_mail, EmailMultiAlternatives
 from .email import send_welcome_email
 from .models import alogoEmailRecipients
 
+
 # Create your views here.
 def home(request):
         return render(request, 'home.html')
+ 
+def contact(request):
+        if request.method == 'POST':
+                 name = request.POST.get('name')
+                 email = request.POST.get('email')
+                 message = request.POST.get('mesage')
 
-def subscribe(request):
-        post_data = request.POST.copy()
-        email = post_data.get("email", None)
-        name = post_data.get("name", None)
+                 # email
+                 subject = 'contact Form received'
+                 from_email= settings.DEFAULT_FROM_EMAIL
+                 to_email = [settings.DEFAULT_FROM_EMAIL]
 
-        error_msg = validation_utility.validate_email(email)
-        if error_msg:
-                messages.error(request, error_msg)
-        return HttpResponseRedirect(reverse('alogotech:subscribe'))
+                 context = {
+                         'user': name,
+                         'email': email,
+                         'message': message
+                 }
+                 contact_message = get_template('contact_message.txt').render(context)
+                 send_mail(subject, contact_message, from_email,to_email, fail_silently=True)
 
+                 return render(request, 'home.html', {})
+
+  
+
+       

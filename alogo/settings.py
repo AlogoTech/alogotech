@@ -126,9 +126,12 @@ os.path.join(BASE_DIR, "static"),
 '/var/www/static/',
 ]
 
-EMAIL_HOST = 'smtp.alogotech.com'
+#Email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+MAILER_EMAIL_BACKEND = EMAIL_BACKEND
+EMAIL_USE_SSL= True
+EMAIL_HOST = 'server121.web-hosting.com'
+EMAIL_PORT = 465
 EMAIL_HOST_USER = 'dev@alogotech.com'
-EMAIL_HOST_PASSWORD = 'alogoTech@2019'
-EMAIL_PORT ='localhost'
-EMAIL_USE_TLS = 'True'
-
+EMAIL_HOST_PASSWORD = 'Q[v8CER*_8Jy'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

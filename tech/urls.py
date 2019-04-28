@@ -5,8 +5,8 @@ from django.conf.urls.static import static
 
 
 urlpatterns=[
-    url('',views.home,name = 'welcome'),
-    url(r'subscribe/', views.subscribe, name='subscribe'),
+    url('', views.home,name = 'welcome'),
+    url(r'contact/', views.contact, name='contact'),
 
     
 ]

@@ -11,7 +11,7 @@ class alogoEmailRecipients(models.Model):
     status = models.CharField(max_length=64, null=False, blank=True)
     created_date = models.DateTimeField(null=False, blank=True)
     updated_date = models.DateTimeField(null=False, blank=True)
-
+    content= models.TextField()
     class Meta:
         app_label = "alogotech"
         db_table = "alogotech_subscribe"

@@ -1,5 +1,5 @@
 import re
-from alogotech.assets.blocked_emails import disposable_emails
+from appname.assets.blocked_emails import disposable_emails
 
 def validate_email(email):    
     if email is None:
