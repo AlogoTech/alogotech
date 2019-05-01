@@ -23,7 +23,7 @@ def contact(request):
                  message = request.POST.get('mesage')
 
                  # email
-                 subject = 'contact Form received'
+                 subject = 'contact From Client'
                  from_email= settings.DEFAULT_FROM_EMAIL
                  to_email = [settings.DEFAULT_FROM_EMAIL]
 
@@ -34,8 +34,8 @@ def contact(request):
                  }
                  contact_message = get_template('contact_message.txt').render(context)
                  send_mail(subject, contact_message, from_email,to_email, fail_silently=True)
-
-                 return render(request, 'home.html', {})
+                 return redirect('/other/')
+        return render(request, 'home.html', {})
 
   
 

@@ -127,7 +127,7 @@ os.path.join(BASE_DIR, "static"),
 ]
 
 #Email
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
 MAILER_EMAIL_BACKEND = EMAIL_BACKEND
 EMAIL_USE_SSL= True
 EMAIL_HOST = 'server121.web-hosting.com'

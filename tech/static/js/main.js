@@ -203,27 +203,6 @@ $(document).on('ready', function () {
 							}
 						}
 					}
-
-					// init contact form
-					// Default server url
-					var newsletterServerUrl = './ajaxserver/serverfile.php';
-					var messageServerUrl = './ajaxserver/serverfile.php';
-
-					// Use form define action attribute
-					if (sendEmailForm.attr('action') && (sendEmailForm.attr('action')) != '') {
-						newsletterServerUrl = sendEmailForm.attr('action');
-					}
-					if (sendMessageForm.attr('action') && (sendMessageForm.attr('action') != '')) {
-						messageServerUrl = sendMessageForm.attr('action');
-					}
-
-					sendEmailForm.initForm({
-						serverUrl: newsletterServerUrl,
-					});
-					sendMessageForm.initForm({
-						serverUrl: messageServerUrl,
-					});
-
 				},
 				afterResize: function () {
 					var pluginContainer = $(this);
